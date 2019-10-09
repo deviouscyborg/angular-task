@@ -5,24 +5,12 @@
 </div>
 
 <div class="container">
-<table class="table table-bordered table-condensed table-striped table-hover">
-  <thead>
-  <tr>
-    <th>First Name</th>
-    <th>Last Name</th>
-    <th>Phone Number</th>
-    <th>Email</th>
-    <th>DOB</th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr class="table-row" *ngFor="let user of users; let i = index" (click)="showDetails(i)">
-    <td>{{user.name.first}}</td>
-    <td>{{user.name.last}}</td>
-    <td>{{user.phone}}</td>
-    <td>{{user.email}}</td>
-    <td>{{user.dob.date}}</td>
-  </tr>
-  </tbody>
-</table>
+  <div class="head">
+    <span class="value">First Name</span>
+    <span class="value">Last Name</span>
+    <span class="value">Phone Number</span>
+    <span class="value">Email</span>
+    <span class="value">DOB</span>
+  </div>
+  <app-user-info  *ngFor="let user of users; let i = index" [user]="user" (click)="showDetails(i)"></app-user-info>
 </div>

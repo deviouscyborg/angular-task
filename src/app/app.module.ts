@@ -8,12 +8,14 @@ import {RouterModule} from '@angular/router';
 import {HttpClientModule} from '@angular/common/http';
 import {AppRoutingModule} from './app-routing.module';
 import {UserDataService} from './user-data.service';
+import { UserInfoComponent } from './user-info/user-info.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UserDetailComponent,
     UserListComponent,
+    UserInfoComponent,
   ],
   imports: [
     BrowserModule,
