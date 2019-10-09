@@ -8,4 +8,11 @@
   border: 1px solid black;
   font-weight: bold;
   padding: 1.5px;
+  background: ghostwhite;
+  font-size: large;
+}
+
+.custom {
+  height: 80%;
+  margin: auto;
 }

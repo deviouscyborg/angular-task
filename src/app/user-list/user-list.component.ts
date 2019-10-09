@@ -19,11 +19,14 @@ export class UserListComponent implements OnInit {
               private router: Router) { }
 
   ngOnInit() {
-     this.userDataService.getUsers()
-       .subscribe(res => {
-         this.users = res;
-         console.log(this.users);
-       });
+  }
+
+  fetchUsers() {
+    this.userDataService.getUsers()
+      .subscribe(res => {
+        this.users = res;
+        console.log(this.users);
+      });
   }
 
   showDetails(i: number) {
