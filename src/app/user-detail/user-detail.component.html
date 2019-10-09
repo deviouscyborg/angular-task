@@ -1,8 +1,11 @@
 <div class="container" *ngIf="user">
-<div>
+<div class="userValue col-sm-10 d-inline-block">
   <h2>Users</h2>
   <h3>Personal Information</h3>
 </div>
+  <div class="col-sm-1 btn btn-primary d-inline-block custom" (click)="navBack()">
+    Back
+  </div>
 <div class="row">
 <div class="col-sm-2">
   <img [src]="user.picture.large"

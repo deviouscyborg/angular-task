@@ -31,6 +31,10 @@ export class UserDetailComponent implements OnInit {
 
   }
 
+  navBack() {
+    this.router.navigateByUrl('/users');
+  }
+
 // let user: User;
 
 }
